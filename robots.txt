@@ -1,0 +1,6 @@
+# Allow all crawlers to index the whole site
+User-agent: *
+Allow: /
+
+# Replace with your live URL once deployed (GitHub Pages / Netlify)
+Sitemap: https://YOUR-USERNAME.github.io/YOUR-REPO/sitemap.xml

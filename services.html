@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farming Services: Crops, Irrigation, Machinery Hire | SodaMengu</title>
+  <meta name="description" content="Explore SodaMengu's farming services: crop production, agricultural consultancy, irrigation, machinery hire, seed supply, organic farming and agri-tourism.">
+  <meta name="author" content="SodaMengu Farming Services">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Farming Services: Crops, Irrigation, Machinery Hire | SodaMengu">
+  <meta property="og:description" content="Explore SodaMengu's farming services: crop production, agricultural consultancy, irrigation, machinery hire, seed supply, organic farming and agri-tourism.">
+  <meta property="og:image" content="IMG/basic.jpg">
+  <meta name="theme-color" content="#2f4a2c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BE%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-brand">SodaMengu Farming</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" title="Menu"><span aria-hidden="true">&#9776;</span><span class="visually-hidden">Open menu</span></label>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="enquiry.html">Enquiry</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h1>Our Services</h1>
+          <p>Practical, dependable farming support &mdash; from the first furrow to the final harvest.</p>
+        </div>
+
+        <h2>Who we serve</h2>
+        <ul class="audience-list">
+          <li>Local consumers</li>
+          <li>Retail stores and supermarkets</li>
+          <li>Support community NGOs</li>
+          <li>Agricultural investors</li>
+          <li>Farmers looking for partnerships</li>
+        </ul>
+        <img src="IMG/shoprite.jpg" width="289" height="175" alt="Three farm workers in red aprons holding fresh vegetables in a supermarket" class="rounded-img">
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2>What we offer</h2>
+
+        <form class="toolbar" role="search" aria-label="Filter services" onsubmit="return false">
+          <div class="toolbar-field grow">
+            <label for="service-search">Search services</label>
+            <input type="search" id="service-search" placeholder="Try &ldquo;irrigation&rdquo; or &ldquo;soil&rdquo;" autocomplete="off">
+          </div>
+          <div class="toolbar-field">
+            <label for="service-category">Type</label>
+            <select id="service-category">
+              <option value="all">All services</option>
+              <option value="growing">Growing</option>
+              <option value="advice">Advice</option>
+              <option value="equipment">Equipment &amp; supplies</option>
+              <option value="visits">Farm visits</option>
+            </select>
+          </div>
+          <div class="toolbar-field">
+            <label for="service-sort">Sort</label>
+            <select id="service-sort">
+              <option value="default">Our order</option>
+              <option value="az">A to Z</option>
+              <option value="za">Z to A</option>
+            </select>
+          </div>
+        </form>
+        <p id="service-count" class="muted" role="status">Showing all 7 services</p>
+
+        <div class="card-grid" id="service-grid">
+          <div class="card" data-name="Crop Production" data-category="growing" data-order="0" data-enquiry="Crop Production" data-id="crop">
+            <img src="IMG/basic.jpg" alt="Rows of young maize under a sunset sky" loading="lazy">
+            <div class="card-body">
+              <h3>&#127793; Crop Production</h3>
+              <p>Growing and supplying vegetables, fruits, grains, and herbs. Seasonal crop planning and harvesting. Organic and conventional farming.</p>
+              <button type="button" class="card-more-btn" data-open-service>Details<span class="visually-hidden"> about Crop Production</span></button>
+              <div class="card-more" hidden><ul><li>Vegetables, fruits, grains and herbs</li><li>Seasonal crop planning</li><li>Harvesting support</li><li>Organic and conventional methods</li></ul></div>
+            </div>
+          </div>
+          <div class="card" data-name="Agricultural Consultancy" data-category="advice" data-order="1" data-enquiry="Agricultural Consulting" data-id="consult">
+            <img src="IMG/Agri.jpg" alt="Icons showing sun, water, tractor and drone over a planted field" loading="lazy">
+            <div class="card-body">
+              <h3>&#127793; Agricultural Consultancy</h3>
+              <p>Farm planning and management advice. Soil testing and analysis. Crop selection recommendations. Pest and disease management.</p>
+              <button type="button" class="card-more-btn" data-open-service>Details<span class="visually-hidden"> about Agricultural Consultancy</span></button>
+              <div class="card-more" hidden><ul><li>Farm planning and management advice</li><li>Soil testing and analysis</li><li>Crop selection recommendations</li><li>Pest and disease management</li></ul></div>
+            </div>
+          </div>
+          <div class="card" data-name="Irrigation Solutions" data-category="equipment" data-order="2" data-enquiry="Irrigation Services" data-id="irrigation">
+            <img src="IMG/irrigation.jpg" alt="A centre-pivot irrigation arm spraying a green field" loading="lazy">
+            <div class="card-body">
+              <h3>&#128167; Irrigation Solutions</h3>
+              <p>Installation of irrigation systems. Irrigation maintenance. Water management solutions.</p>
+              <button type="button" class="card-more-btn" data-open-service>Details<span class="visually-hidden"> about Irrigation Solutions</span></button>
+              <div class="card-more" hidden><ul><li>Installation of irrigation systems</li><li>Irrigation maintenance</li><li>Water management solutions</li></ul></div>
+            </div>
+          </div>
+          <div class="card" data-name="Farm Machinery Hire" data-category="equipment" data-order="3" data-enquiry="Ploughing and Planting" data-id="machinery">
+            <img src="IMG/tractor.jpg" alt="A blue tractor on harvested farmland" loading="lazy">
+            <div class="card-body">
+              <h3>&#128668; Farm Machinery Hire</h3>
+              <p>Tractor and machinery hire. Equipment maintenance. Farm mechanisation support.</p>
+              <button type="button" class="card-more-btn" data-open-service>Details<span class="visually-hidden"> about Farm Machinery Hire</span></button>
+              <div class="card-more" hidden><ul><li>Tractor and machinery hire</li><li>Equipment maintenance</li><li>Farm mechanisation support</li></ul></div>
+            </div>
+          </div>
+          <div class="card" data-name="Seed & Fertiliser Supply" data-category="equipment" data-order="4" data-enquiry="" data-id="seed">
+            <img src="IMG/lalwethu.jpg" alt="Four hessian sacks of seed and fertiliser in front of seedlings" loading="lazy">
+            <div class="card-body">
+              <h3>&#127806; Seed &amp; Fertiliser Supply</h3>
+              <p>Certified seeds. Organic and chemical fertilisers. Crop protection products.</p>
+              <button type="button" class="card-more-btn" data-open-service>Details<span class="visually-hidden"> about Seed & Fertiliser Supply</span></button>
+              <div class="card-more" hidden><ul><li>Certified seeds</li><li>Organic and chemical fertilisers</li><li>Crop protection products</li></ul></div>
+            </div>
+          </div>
+          <div class="card" data-name="Organic Farming" data-category="growing" data-order="5" data-enquiry="Crop Production" data-id="organic">
+            <img src="IMG/crop.jpg" alt="Cover of a crop rotation planning manual for organic farms" loading="lazy">
+            <div class="card-body">
+              <h3>&#127807; Organic Farming</h3>
+              <p>Organic crop production. Organic certification support. Eco-friendly farming practices.</p>
+              <button type="button" class="card-more-btn" data-open-service>Details<span class="visually-hidden"> about Organic Farming</span></button>
+              <div class="card-more" hidden><ul><li>Organic crop production</li><li>Organic certification support</li><li>Eco-friendly farming practices</li></ul></div>
+            </div>
+          </div>
+          <div class="card" data-name="Agri-Tourism" data-category="visits" data-order="6" data-enquiry="" data-id="tourism">
+            <img src="IMG/tourism.jpg" alt="Children picking strawberries and visitors on a farm tour" loading="lazy">
+            <div class="card-body">
+              <h3>&#127968; Agri-Tourism</h3>
+              <p>Farm tours. Educational visits. School excursions. Farm experience events.</p>
+              <button type="button" class="card-more-btn" data-open-service>Details<span class="visually-hidden"> about Agri-Tourism</span></button>
+              <div class="card-more" hidden><ul><li>Farm tours</li><li>Educational visits</li><li>School excursions</li><li>Farm experience events</li></ul></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="service-empty" class="empty-state" hidden>
+          <p><strong>No services match your search.</strong></p>
+          <p>Check the spelling, try a shorter word, or clear the filters.</p>
+          <button type="button" id="service-reset" class="form-submit">Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-band">
+          <h2>Not sure which service you need?</h2>
+          <p>Tell us about your farm and we will point you to the right one.</p>
+          <a href="enquiry.html" class="btn">Request a service</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="service-modal" class="modal" aria-labelledby="service-modal-title">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" data-close aria-label="Close details">&times;</button>
+      <img id="service-modal-img" src="" alt="">
+      <div class="modal-body">
+        <h2 id="service-modal-title"></h2>
+        <p id="service-modal-summary"></p>
+        <h3>What is included</h3>
+        <div id="service-modal-list" class="check-list"></div>
+        <a id="service-modal-link" class="btn modal-btn" href="enquiry.html">Enquire about this service</a>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 SodaMengu Farming Services. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="enquiry.html">Request a service</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
